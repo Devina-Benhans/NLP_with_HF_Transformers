@@ -30,7 +30,7 @@ Result :
 
 Analysis on example 1 : 
 
-The sentiment analysis classifier accurately detects the positive tone in the given sentence. It shows a high confidence score, indicating that the model is reliable for straightforward emotional expressions, such as enthusiasm or joy, in English-language input.
+Model cardiffnlp/twitter-roberta-base-sentiment berhasil mengklasifikasikan tweet dengan akurasi tinggi sebagai positif. Ini menunjukkan kemampuannya dalam memahami ekspresi emosional secara eksplisit di media sosial, terutama pada kalimat yang menunjukkan kepuasan atau kegembiraan.
 
 
 ### Exercise 2 - Topic Classification
@@ -58,7 +58,7 @@ Result :
 
 Analysis on example 2 : 
 
-The zero-shot classifier correctly identifies "pet" as the most relevant label, with a high confidence score. This shows the model's strong ability to associate descriptive context with predefined categories, even without task-specific fine-tuning or training on the input text.
+Dengan menggunakan model facebook/bart-large-mnli, teks tentang hobi dan budaya berhasil diklasifikasikan sebagai topik "travel" meskipun tidak ada pelatihan sebelumnya terhadap label tersebut. Ini membuktikan kemampuan zero-shot learning dalam mengaitkan teks dengan label yang bersifat semantik.
 
 ### Exercise 3 - Text Generation Models
 
@@ -76,7 +76,7 @@ Result :
 
 Analysis on example 3 : 
 
-The text generation model produces coherent and imaginative continuations of a cooking-themed prompt. It demonstrates creativity and sentence flow, although output content may vary in tone and logic. The results showcase the model's usefulness for generating casual or narrative text.
+Model teks mampu menghasilkan lanjutan kalimat yang koheren dan panjang dari prompt awal. Meskipun beberapa bagian terlihat repetitif atau tidak logis, hasilnya tetap menggambarkan potensi GPT-based models dalam menciptakan teks naratif atau kreatif secara otomatis.
 
 ### Exercise 4 - Name Entity Recognition
 
@@ -96,7 +96,7 @@ Result :
 
 Analysis on example 4 : 
 
-The named entity recognizer successfully identifies personal, organizational, and location entities from the sentence. Grouped outputs are relevant and accurate, with high confidence scores, demonstrating the model’s effectiveness in real-world applications like information extraction or document tagging.
+Dengan model camembert-ner, entitas seperti nama orang dan lokasi dapat dikenali secara akurat dari kalimat pendek. Ini menunjukkan keandalan model dalam melakukan ekstraksi informasi dasar, cocok untuk aplikasi seperti analisis berita atau chatbot.
 
 ### Exercise 5 - Question Answering
 
@@ -119,7 +119,8 @@ Result :
 
 Analysis on example 5 : 
 
-The question-answering model correctly extracts the most relevant phrase "a cat" from the provided context. Its confidence score is decent, and the model showcases strong capabilities in understanding natural questions and matching them with the most likely answer span.
+Pipeline QA berbasis distilbert berhasil menjawab pertanyaan dengan tepat dari konteks yang diberikan, dengan skor keyakinan yang sangat tinggi. Ini menegaskan kemampuannya dalam memahami konteks dan menemukan jawaban spesifik secara efisien.
+
 
 ### Exercise 6 - Text Summarization
 
@@ -140,7 +141,7 @@ Result :
 
 Analysis on example 6 :
 
-The summarization pipeline effectively condenses the core idea of the paragraph into a shorter version. It maintains key concepts like machine learning, pattern recognition, and practical applications, reflecting the model's strength in content compression without major loss of information.
+Model distilbart merangkum paragraf panjang menjadi versi singkat tanpa kehilangan informasi penting seperti lokasi dan statistik utama. Hal ini menunjukkan efisiensi model dalam menyederhanakan teks informatif, berguna dalam dunia jurnalistik dan dokumentasi.
 
 ### 7. Example 7 - Translation
 
@@ -159,7 +160,8 @@ Result :
 
 Analysis on example 7 :
 
-The translation model delivers an accurate and context-aware French translation of the Indonesian sentence. It handles informal, conversational input smoothly, making it suitable for multilingual communication tasks and cross-language understanding in casual or daily scenarios.
+Model t5-small mampu menerjemahkan kalimat bahasa Inggris ke bahasa Jerman dengan benar secara gramatikal dan konteks. Meski ringan, model ini efektif dalam komunikasi lintas bahasa yang cepat dan informal.
+
 
 ---
 
